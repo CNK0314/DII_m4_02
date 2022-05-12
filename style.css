@@ -1,4 +1,4 @@
-h1{
+/*h1{
     color:blue;
 }
 ul{
@@ -32,12 +32,12 @@ body {
        color: #a7dadc;
    }
    ul li::before{
-    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #E63946; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -2em; /* Also needed for space (tweak if needed) */
+    content: "\2022"; 
+    color: #E63946; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -2em; 
    }
 
 ol>li {
@@ -49,4 +49,41 @@ ol{
 }
 ol{
     color: red;
+}
+*/
+body{
+    background-color: #475C7A ;
+}
+h1{
+    color: #fcbb6d;
+    background-color: #685d79;
+}
+ol, ul> li {
+    color: #ffff;
+}
+ol{
+    background-color: #d8737f;
+}
+ul:nth-of-type(even){
+    list-style-type: none;
+    background: #685d79;
+}
+ul:nth-of-type(oddn){
+    list-style-type: none;
+    background: #ab6c82;
+}
+ul li::before{
+    content: "\2022";
+    color: #fcbb6d;
+    font-weight: bold;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -2em; 
+    }
+ol>li:nth-child(4n+1){ /*odd*/
+    background-color: #ab6c82
+}
+ol>li:nth-child(4n+3){ /*even*/
+    background-color: #ab6c82
 }
