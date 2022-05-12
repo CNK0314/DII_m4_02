@@ -1,0 +1,64 @@
+div {
+	/* 0001 */
+	color: black;
+}
+div p {
+	/* 0002 */
+	color: white;
+}
+.div1 p {
+	/* 00011 */
+	color: orange;
+}
+div.div1 p {
+	/* 0012 */
+	color: red;
+}
+#div1 p {
+	/* 0101 */
+	color: green;
+}
+#x1 {
+	/* 0100 */
+	color: brown;
+}
+div #x1 {
+	/* 0101 */
+	color: red;
+}
+div p:first-child {
+	/* 0012 */
+	color: brown;
+}
+.x2 {
+	/* 0010 */
+	color: teal;
+}
+div span {
+	/* 0002 */
+	color: yellow;
+}
+div > span {
+	/* 0002 */
+	color: lightblue;
+}
+p span {
+	/* 0002 */
+	color: gold;
+}
+p #x2 {
+	/* 0011 */
+	color: purple;
+}
+p span.x2 {
+	/* 0012 */
+	color: beige;
+}
+p > .x2 {
+	/* 0011 */
+	color: maroon;
+}
+div > span {
+	/* 0002 */
+	color: blue;
+}
